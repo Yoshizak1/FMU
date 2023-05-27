@@ -4,7 +4,7 @@
 int main() {
     float a, b, c, delta, x1, x2;
     printf("Digite os coeficientes a, b e c da equacao: ");
-    scanf("%f %f %f", &a, &b, &c);
+    scanf("%f %f %f", &a, &b, &c); 
     // Verificar se a é diferente de zero
     if (a == 0) {
         printf("Coeficiente 'a' nao pode ser zero.\n");
@@ -26,6 +26,6 @@ int main() {
     }
     // Imprimir as raizes
     printf("x1 = %.2f\n", x1);
-    printf("x2 = %.2f\n", x2);
+    printf("x2 = %.2f\n", x2); 
     return 0;
 }
