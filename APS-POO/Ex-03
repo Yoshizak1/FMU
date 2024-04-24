@@ -1,1 +1,15 @@
+class Quadrado:
+    def __init__(self, lado):
+        self.lado = lado
 
+    def calcular_area(self):
+        return self.lado ** 2
+
+    def calcular_perimetro(self):
+        return 4 * self.lado
+meu_quadrado = Quadrado(10)
+
+area = meu_quadrado.calcular_area()
+print("Área do quadrado:", area)
+perimetro = meu_quadrado.calcular_perimetro()
+print("Perímetro do quadrado:", perimetro)
