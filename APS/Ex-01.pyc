@@ -39,5 +39,3 @@ remover_item("Pão", 1)
  
 # Exibe a lista de compras atualizada
 exibir_lista()
-tem menu de contexto
-Redigir
