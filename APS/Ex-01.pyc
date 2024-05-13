@@ -1,0 +1,43 @@
+# Inicializando a lista de compras como um dicionário vazio
+lista_de_compras = {}
+ 
+# Adicionando itens à lista de compras
+def adicionar_item(item, quantidade):
+    if item in lista_de_compras:
+        lista_de_compras[item] += quantidade
+    else:
+        lista_de_compras[item] = quantidade
+ 
+# Removendo itens da lista de compras
+def remover_item(item, quantidade):
+    if item in lista_de_compras:
+        lista_de_compras[item] -= quantidade
+        if lista_de_compras[item] <= 0:
+            del lista_de_compras[item]
+    else:
+        print(f"{item} não está na lista de compras.\n")
+ 
+# Exibindo a lista de compras
+def exibir_lista():
+    print("Lista de Compras:")
+    for item, quantidade in lista_de_compras.items():
+        print(f"{item}: {quantidade}\n")
+ 
+# Adicionando alguns itens à lista de compras
+adicionar_item("Maçã", 3)
+adicionar_item("Batata", 5)
+adicionar_item("Leite", 2)
+adicionar_item("Pão Francês", 6)
+adicionar_item("Amaciante", 1)
+ 
+# Exibindo a lista de compras
+exibir_lista()
+ 
+# Removendo alguns itens da lista de compras
+remover_item("Maçã", 1)
+remover_item("Pão", 1)
+ 
+# Exibe a lista de compras atualizada
+exibir_lista()
+tem menu de contexto
+Redigir
